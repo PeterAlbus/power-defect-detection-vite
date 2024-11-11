@@ -72,9 +72,9 @@ router.beforeEach((to, from, next) => {
 });
 
 const navItems = [{ name: "主页", indexPath: "/", iconName: "HomeFilled" },
-  { name: "样本增广", indexPath: "/", iconName: "Menu" },
-  { name: "缺陷分类", indexPath: "/", iconName: "UserFilled" },
-  { name: "鲁棒性评估", indexPath: "/", iconName: "PictureFilled" }];
+  { name: "样本增广", indexPath: "/a", iconName: "Menu" },
+  { name: "缺陷分类", indexPath: "/b", iconName: "UserFilled" },
+  { name: "鲁棒性评估", indexPath: "/c", iconName: "PictureFilled" }];
 
 const toLink = (path: any) => {
   router.push(path);

@@ -1,22 +1,20 @@
-<script setup lang="ts">
+<script setup lang="ts" xmlns="http://www.w3.org/1999/html">
 import { onMounted } from "vue";
-import {login, register} from "@/services/pre-api.ts";
+import { useRouter } from "vue-router";
 
-onMounted(async () => {
-  login({'abc': 2000}).then((res)=>{
-    console.log(res)
-  })
-  // register({'username':'peteralbus','password':'123456','email':'wuhongdb@163.com'}).then((res)=>{
-  //   console.log(res)
-  // })
-});
+const router = useRouter();
 </script>
 
 <template>
   <main>
     <div class="container">
-      Hello Vite!
-      <el-button>abc</el-button>
+      <div>
+        Hello Vite!
+      </div>
+      <br>
+      <div>
+        <el-button @click="router.push('/template')">跳转到模板页面</el-button>
+      </div>
     </div>
   </main>
 </template>

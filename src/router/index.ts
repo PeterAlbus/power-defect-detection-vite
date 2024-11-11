@@ -25,6 +25,11 @@ const router = createRouter({
       path: "/userCenter",
       name: "UserCenter",
       component: () => import("@/views/user/UserCenterView.vue"),
+    },
+    {
+      path: "/template",
+      name: "Template",
+      component: () => import("@/views/template/TemplateView.vue"),
     }
   ],
 });
