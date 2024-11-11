@@ -1,10 +1,8 @@
 # Vite + Vue3 + TypeScript
 
-# 前端项目模板
+# 电力设备缺陷检测模型平台
 
-This template should help get you started developing with Vue 3 in Vite.
-
-该模板可以帮助快速构建一个基于Vite的Vue3项目。
+基于Vue + TS搭建。
 
 ## Dependencies / 包含库
 
@@ -17,7 +15,7 @@ This template should help get you started developing with Vue 3 in Vite.
 + 页面SFC存放于views文件夹内，组件存放于components。
 + 接口url及请求相关方法放置于services文件夹内。不同环境通过VITE_APP_ENV识别。
 + 开发prompt:
-  你好，我现在正在使用vue编写一个网页，使用vue3.0+typescript+element-plus，使用组合式api+setup语法糖，element-plus的组件已经配置了自动引入，你可以帮我编写一个[组件丨页面]，[要求]?
+  你好，我现在正在使用vue编写一个网页，使用vue3.0+element-plus，使用组合式api+setup语法糖，element-plus的组件已经配置了自动引入，你可以帮我编写一个[组件丨页面]，[要求]?
 
 ## Recommended IDE Setup / 推荐IDE及插件
 
