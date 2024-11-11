@@ -42,15 +42,15 @@ router.beforeEach((to, from, next) => {
     userStore.updateUser(JSON.parse(localStorage.getItem("user") as string));
   }
 
-  if (to.name != "Login" && to.name != "Register" && userStore.id == "") {
-    next("/login");
-    return;
-  }
-
-  if ((to.name == "Login" || to.name == "Register") && userStore.id != "") {
-    next("/userCenter");
-    return;
-  }
+  // if (to.name != "Login" && to.name != "Register" && userStore.id == "") {
+  //   next("/login");
+  //   return;
+  // }
+  //
+  // if ((to.name == "Login" || to.name == "Register") && userStore.id != "") {
+  //   next("/userCenter");
+  //   return;
+  // }
   next();
 });
 
