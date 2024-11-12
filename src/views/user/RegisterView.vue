@@ -1,5 +1,4 @@
 <template>
-  <Banner title="登录"></Banner>
   <div class="main-container flex-box">
     <div class="form-box">
       <el-row style="height: 100%" justify="space-between">
@@ -27,7 +26,7 @@
           </el-form>
         </el-col>
         <el-col :sm="12" :xs="24">
-          <el-image style="width: 100%;height: 100%;border-radius: 5px 0 0 5px;"
+          <el-image style="width: 100%;height: 100%;border-radius: 0 5px 5px 0;"
                     :src="registerImage" fit="cover" />
         </el-col>
       </el-row>

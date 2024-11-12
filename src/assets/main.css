@@ -13,6 +13,15 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, ul, ol, li, p {
   padding: 0;
 }
 
+body {
+  background-color: #f2f5f7;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -46,8 +55,8 @@ a {
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 0;
-  background-color: #eeeeee;
-  min-height: 70vh;
+  background-color: #f2f5f7;
+  min-height: 90vh;
 }
 
 .main-container a {
@@ -57,36 +66,6 @@ a {
 .main-container a:hover {
   color: #82A96D;
 }
-
-.module {
-  position: relative;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.paragraph {
-  padding: 10px;
-}
-
-.blog-cover {
-  height: 170px;
-  width: 100%;
-}
-
-.title {
-  position: relative;
-  margin: 0;
-  padding: 6px 20px;
-  height: 20px;
-  border-bottom: 1px solid #eaeaea;
-  border-radius: 5px 5px 5px 5px;
-  background-color: #f7f7f7;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-  text-align: left;
-}
-
 .content {
   position: relative;
   background-color: #fff;
@@ -98,27 +77,6 @@ a {
   margin: 0 auto;
   width: 90%;
   padding: 8px;
-}
-
-.blog-description {
-  text-align: left;
-  height: 150px;
-  padding: 10px;
-}
-
-.blog-description .blog-description-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
-}
-
-.blog-description .blog-description-title.title-text {
-  white-space: nowrap;
-  display: inline-block;
-  max-width: calc(100% - 65px);
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .info {
@@ -199,21 +157,6 @@ a {
 
 #app .music-container .aplayer .aplayer-body {
   bottom: 120px;
-}
-
-/*md编辑器*/
-.v-note-wrapper.fullscreen {
-  z-index: 1501!important;
-}
-
-.v-note-wrapper {
-  z-index: auto!important;
-}
-
-
-.markdown-body .highlight pre, .markdown-body pre {
-  background-color: #ffffff!important;
-  padding: 6px!important;
 }
 
 .flex-box {

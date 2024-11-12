@@ -1,5 +1,4 @@
 <template>
-  <Banner title="登录"></Banner>
   <div class="main-container flex-box">
     <div class="form-box">
       <el-row style="height: 100%" justify="space-between">
@@ -12,8 +11,8 @@
             <h2>用户登录</h2>
           </div>
           <el-form ref="ruleFormRef" :model="loginForm" :rules="rules" label-width="80px" status-icon>
-            <el-form-item label="用户名" prop="username">
-              <el-input v-model="loginForm.username" autocomplete="off"></el-input>
+            <el-form-item label="邮箱" prop="email">
+              <el-input v-model="loginForm.email" autocomplete="off"></el-input>
             </el-form-item>
             <el-form-item label="密码" prop="password">
               <el-input type="password" v-model="loginForm.password" autocomplete="off"></el-input>
@@ -43,20 +42,20 @@ const router = useRouter();
 const userStore = useUserStore();
 
 interface LoginForm {
-  username: string;
+  email: string;
   password: string;
 }
 
 const ruleFormRef = ref<FormInstance>()
 
 const loginForm = ref<LoginForm>({
-  username: '',
+  email: '',
   password: ''
 });
 
 const rules = reactive<FormRules<LoginForm>>({
-  username: [
-    { required: true, message: '请输入用户名', trigger: 'blur' },
+  email: [
+    { required: true, message: '请输入邮箱', trigger: 'blur' },
   ],
   password: [
     { required: true, message: '请输入密码', trigger: 'blur' },
@@ -68,7 +67,7 @@ const handleLogin = async (formEl: FormInstance | undefined) => {
   await formEl.validate((valid, fields) => {
     if (valid) {
       console.log('submit!')
-      login(loginForm.value.username, loginForm.value.password).then((res) => {
+      login(loginForm.value.email, loginForm.value.password).then((res) => {
         console.log(res);
         if (res.code === 200) {
           userStore.updateUser(res.data)

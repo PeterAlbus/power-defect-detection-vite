@@ -1,5 +1,4 @@
 <template>
-  <Banner title="界面名称"></Banner>
   <div class="main-container flex-box">
     <h1>这是一个标题</h1>
     <div>这是一个界面内容，布局使用了flex布局，通过css实现，可以搜索了解。</div>
