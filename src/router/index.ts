@@ -27,6 +27,11 @@ const router = createRouter({
       component: () => import("@/views/user/UserCenterView.vue"),
     },
     {
+      path: "/robustness",
+      name: "Robustness",
+      component: () => import("@/views/robustness/RobustnessView.vue"),
+    },
+    {
       path: "/template",
       name: "Template",
       component: () => import("@/views/template/TemplateView.vue"),

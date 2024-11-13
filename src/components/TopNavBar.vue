@@ -34,7 +34,7 @@ router.beforeEach((to, from, next) => {
 const navItems = [{ name: "主页", indexPath: "/", iconName: "HomeFilled" },
   { name: "数据增广", indexPath: "/a", iconName: "Menu" },
   { name: "模型检测", indexPath: "/b", iconName: "UserFilled" },
-  { name: "鲁棒性评估", indexPath: "/c", iconName: "PictureFilled" }];
+  { name: "鲁棒性评估", indexPath: "/robustness", iconName: "PictureFilled" }];
 
 const toLink = (path: any) => {
   router.push(path);

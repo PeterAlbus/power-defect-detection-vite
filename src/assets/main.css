@@ -166,4 +166,8 @@ a {
   flex-direction: column;
 }
 
+.el-form-item__label {
+  font-size: 18px !important;
+}
+
 

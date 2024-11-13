@@ -32,7 +32,6 @@
 <script lang="ts" setup>
 import {reactive, ref} from 'vue';
 import loginImage from '@/assets/login.jpg';
-import Banner from "@/components/Banner.vue";
 import { login } from "@/services/user-api.ts";
 import { useUserStore  } from "@/stores/user.ts";
 import { useRouter } from "vue-router";

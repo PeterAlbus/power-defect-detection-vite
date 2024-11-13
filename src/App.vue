@@ -2,7 +2,7 @@
   <el-config-provider :locale="locale">
     <TopNavBar />
     <RouterView />
-<!--    <Footer />-->
+    <Footer />
   </el-config-provider>
 </template>
 
