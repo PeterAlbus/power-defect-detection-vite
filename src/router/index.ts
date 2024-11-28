@@ -27,6 +27,11 @@ const router = createRouter({
       component: () => import("@/views/user/UserCenterView.vue"),
     },
     {
+      path: "/augment",
+      name: "Augment",
+      component: () => import("@/views/augment/AugmentView.vue"),
+    },
+    {
       path: "/robustness",
       name: "Robustness",
       component: () => import("@/views/robustness/RobustnessView.vue"),
