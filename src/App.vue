@@ -1,5 +1,5 @@
 <template>
-  <el-config-provider :locale="locale">
+  <el-config-provider size="large" :locale="locale">
     <TopNavBar />
     <RouterView />
     <Footer />

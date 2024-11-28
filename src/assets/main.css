@@ -38,19 +38,6 @@ a {
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-
 .main-container {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -63,9 +50,6 @@ a {
   color: black;
 }
 
-.main-container a:hover {
-  color: #82A96D;
-}
 .content {
   position: relative;
   background-color: #fff;
@@ -126,7 +110,7 @@ a {
   /*滚动条里面小方块*/
   border-radius: 10px;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  background: #33613A;
+  background: #4F9B8F;
 }
 
 *::-webkit-scrollbar-track {
@@ -159,15 +143,5 @@ a {
   bottom: 120px;
 }
 
-.flex-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.el-form-item__label {
-  font-size: 18px !important;
-}
 
 
